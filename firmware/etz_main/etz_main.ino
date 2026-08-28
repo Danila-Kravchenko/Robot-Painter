@@ -1,5 +1,3 @@
-//Программа для выполнения тестового задания расположена на сточках 228-236 файла move.ino
-
 #include "Wire.h"
 #include <Adafruit_GFX.h>
 #include <Adafruit_SSD1306.h>
@@ -68,7 +66,6 @@ volatile bool step_state_x = false, step_state_y = false, hanlde_calibrated = fa
 
 bool in_home = true, line_y_found = false;
 
-//Программа для выполнения тестового задания расположена на сточках 228-236 файла move.ino
 void setup() {
   init_interface();
   init_serial();
@@ -84,16 +81,7 @@ void setup() {
   set_handle();
   set_zero_y();
 }
-//Программа для выполнения тестового задания расположена на сточках 228-236 файла move.ino
 void loop() {
-  /*Serial.print(get_angle(10, 10));
-  Serial.print("\t");
-  Serial.print(get_angle(-10, 10));
-  Serial.print("\t");
-  Serial.print(get_angle(-10, -10));
-  Serial.print("\t");
-  Serial.println(get_angle(10, -10));*/
-  //Serial.println(analogRead(A_PIN));
   show_interface();
   set_task();
 }

@@ -225,7 +225,6 @@ void find_point(int dir, double &center_x, double &center_y, double k = 0.3) {
   set_pos((right + left) / 2, (bottom + top) / 2);
 }
 
-//программа для выполнения тестового задания
 void test() {
   find_line();
 
